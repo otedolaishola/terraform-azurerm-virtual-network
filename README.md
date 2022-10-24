@@ -9,6 +9,8 @@
 | >= 2.x.x       | >= 0.13.x         | >= 2.36.0       |
 | >= 1.x.x       | >= 0.13.x         | >= 2.8.0        |
 
+
+
 ## Parameters
 
 The following parameters are supported:
@@ -25,6 +27,7 @@ The following parameters are supported:
 | subnets                    | List of objects that represent the configuration of each subnet.                                                                                  | `list(map(string))` |  `[]`   |    no    |
 | tags                       | A mapping of tags to assign to the resource.                                                                                                      |    `map(string)`    |  `{}`   |    no    |
 
+
 The `subnets` supports the following:
 
 | Name                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |      Type      | Default | Required |
@@ -35,6 +38,8 @@ The `subnets` supports the following:
 | delegation                                     | The name of service to delegate to. Possible values include `Microsoft.BareMetal/AzureVMware`, `Microsoft.BareMetal/CrayServers`, `Microsoft.Batch/batchAccounts`, `Microsoft.ContainerInstance/containerGroups`, `Microsoft.Databricks/workspaces`, `Microsoft.DBforPostgreSQL/serversv2`, `Microsoft.HardwareSecurityModules/dedicatedHSMs`, `Microsoft.Logic/integrationServiceEnvironments`, `Microsoft.Netapp/volumes`, `Microsoft.ServiceFabricMesh/networks`, `Microsoft.Sql/managedInstances`, `Microsoft.StreamAnalytics/streamingJobs`, `Microsoft.Web/hostingEnvironments` and `Microsoft.Web/serverFarms` |    `string`    | `null`  |    no    |
 | enforce_private_link_service_network_policies  | Enable or Disable network policies for the private link service on the subnet. Conflicts with `enforce_private_link_endpoint_network_policies`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |     `bool`     |  false  |    no    |
 | enforce_private_link_endpoint_network_policies | Enable or Disable network policies for the private link endpoint on the subnet. Conflicts with `enforce_private_link_service_network_policies`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |     `bool`     |  false  |    no    |
+
+
 
 ## Outputs
 
